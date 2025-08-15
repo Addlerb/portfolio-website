@@ -7,6 +7,7 @@ import notesAppImg from '../assets/notes-app.jpg';
 import expenseTrackerImg from '../assets/expense-tracker.jpg';
 import quoteGeneratorImg from '../assets/quote-generator.jpg';
 import blogAppImg from '../assets/blog-app.jpg';
+import schoolPortalImg from '../assets/school-portal.jpg'; // Add if image exists
 
 function Projects() {
   const [filter, setFilter] = useState('all');
@@ -56,6 +57,14 @@ function Projects() {
                 transition={{ duration: 0.3 }}
               />
             </div>
+            <motion.span
+              className="project-category"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.15 }}
+            >
+              {project.category}
+            </motion.span>
             <h3>{project.name}</h3>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
