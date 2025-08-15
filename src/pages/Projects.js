@@ -7,7 +7,6 @@ import notesAppImg from '../assets/notes-app.jpg';
 import expenseTrackerImg from '../assets/expense-tracker.jpg';
 import quoteGeneratorImg from '../assets/quote-generator.jpg';
 import blogAppImg from '../assets/blog-app.jpg';
-import schoolPortalImg from '../assets/school-portal.jpg'; // Add if image exists
 
 function Projects() {
   const [filter, setFilter] = useState('all');
