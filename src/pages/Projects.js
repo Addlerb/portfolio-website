@@ -7,6 +7,7 @@ import notesAppImg from '../assets/notes-app.jpg';
 import expenseTrackerImg from '../assets/expense-tracker.jpg';
 import quoteGeneratorImg from '../assets/quote-generator.jpg';
 import blogAppImg from '../assets/blog-app.jpg';
+import financetracker from '../assets/Finance-tracker.jpg'
 
 function Projects() {
   const [filter, setFilter] = useState('all');
@@ -18,6 +19,7 @@ function Projects() {
     { id: 4, name: 'Expense Tracker', description: 'Track income and expenses with a clean UI.', image: expenseTrackerImg, link: 'https://expense-tracker-orpin-phi.vercel.app/', category: 'React' },
     { id: 5, name: 'Random Quote Generator', description: 'Displays random inspirational quotes.', image: quoteGeneratorImg, link: 'https://quote-generator-beryl-phi.vercel.app/', category: 'React' },
     { id: 6, name: 'Simple Blog App', description: 'A blog platform for posting and viewing articles.', image: blogAppImg, link: 'https://blog-app-six-amber.vercel.app/', category: 'React' },
+    { id: 7, name: 'Finance Tracker', description: 'A responsive web application for managing personal finances.', image: financetracker, link: 'https://finance-tracker-eight-omega.vercel.app/', category: 'React'},
   ];
 
   const filteredProjects = filter === 'all' ? projects : projects.filter((project) => project.category === filter);
